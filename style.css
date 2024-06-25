@@ -12,6 +12,29 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    transition: var(--transition);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-text-color);
+    border-radius: 100vw;
+    transition: var(--transition);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--primary-text-color);
+}
+
 .roboto-mono-text {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
