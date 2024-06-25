@@ -39,6 +39,15 @@ body {
 
 #home {
     width: 100%;
+    background: radial-gradient(circle, rgba(13, 20, 18, 0.5) 0%, rgba(48, 70, 65, 0.5) 100%);
+    /* background: radial-gradient(circle, var(--bg-color) 60%, rgba(67, 135, 119, 0.5) 80%, rgba(109, 174, 159, 0.5) 100%);
+    background: radial-gradient(circle,
+    var(--bg-color) 50%,
+    rgb(25, 45, 41) 60%,
+    rgb(27, 47, 43) 70%,
+    rgb(29, 49, 45) 85%,
+    rgb(31, 51, 47) 100%); */
+
 }
 
 .container {
@@ -84,7 +93,8 @@ nav ul li a:hover::after {
 }
 
 .home-container {
-    margin-top: 5%;
+    margin-top: 9%;
+    margin-bottom: 9%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -95,7 +105,6 @@ nav ul li a:hover::after {
     width: 50%;
     border: var(--secondary-text-color) 2px;
     border-radius: 50%;
-    /* border-style: solid dashed dashed; */
     box-shadow: inset 0 0 10px var(--secondary-text-color); 
 }
 
@@ -111,25 +120,35 @@ nav ul li a:hover::after {
     display: inline-block;
     list-style: none;
     margin: 12px;
-    border: var(--secondary-text-color) 2px solid;
-    border-radius: 50%;
 }
 
 .social-icons ul li a {
+    border-radius: 16px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
+    color: var(--secondary-text-color);
+    transition: var(--transition);
+
+}
+
+.social-icons ul li a:hover {
+    color: var(--bg-color);
+    background-color: var(--secondary-text-color);
+}
+
+.social-icons ul li a.resume {
+    border-radius: 16px;
+    padding: 12px;
+    font-size: 20px;
     color: var(--primary-text-color);
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
 }
 
-ul li a.github:hover {
-    color: #4078c0;
-}
-
-ul li a.linkedin:hover {
-    color: #0e76a8;
-}
-
-ul li a.twitter:hover {
-    color: #1da1f2;
+.social-icons ul li a.resume:hover {
+    background-color: var(--primary-text-color);
+    color: var(--bg-color);
 }
