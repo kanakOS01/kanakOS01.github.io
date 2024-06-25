@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -22,8 +23,8 @@
                 <img src="images/logo.png" class="logo" alt="K">
                 <ul>
                     <li><a class="text-primary gugi-text" href="">Home</a></li>
-                    <li><a class="text-primary gugi-text" href="">Work</a></li>
-                    <li><a class="text-primary gugi-text" href="">Resume</a></li>
+                    <li><a class="text-primary gugi-text" href="">About</a></li>
+                    <li><a class="text-primary gugi-text" href="">Projects</a></li>
                     <li><a class="text-primary gugi-text" href="">Contact</a></li>
                 </ul>
             </nav>
@@ -31,8 +32,8 @@
             <div class="home-container">
                 <img src="images/kanak-circle-blur.png" alt="" class="home-img">
                 <div class="home-text">
-                    <h1 class="gugi-text">Hello I'm</h1>
-                    <h1 class="gugi-text text-secondary">
+                    <h1 class="gugi-text title-text">Hello I'm</h1>
+                    <h1 class="gugi-text text-secondary title-text">
                         <span id="typed-text"></span>
                     </h1>
                     <p class="roboto-mono-text">Proficient in working with data, automation and<br> AI/ML applications.
@@ -62,16 +63,65 @@
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="work">
-        
+    <div id="projects">
+
     </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="gugi-text title-text">Contact Me</h1>
+            <div class="row">                    
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text", name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email address" required>
+                        <textarea name="message" rows="10" placeholder="Enter your message"></textarea>
+                        <button class="send-btn roboto-mono-text" type="submit">
+                            Send Message &ThickSpace; <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <div class="social-icons roboto-mono-text">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/kanakOS01" class="icon github" target="_blank">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span class="text-primary">kanaktanwarpro@gmail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/kanakOS01" class="icon github" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span class="text-primary">kanakOS01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/kanak-tanwar" class="icon linkedin" target="_blank">
+                                    <i class="fab fa-linkedin"></i> 
+                                    <span class="text-primary">kanak-tanwar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/kanaktwts" class="icon twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i> 
+                                    <span class="text-primary">kanaktwts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 
