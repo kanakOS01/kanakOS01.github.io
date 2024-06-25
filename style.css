@@ -1,0 +1,135 @@
+:root {
+    --bg-color: rgb(16, 29, 26);
+    --primary-text-color: #adadad;
+    --secondary-text-color: #da4040;
+    --transition: all 0.3s ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-mono-text {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.gugi-text {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-primary {
+    color: var(--primary-text-color);
+}
+
+.text-secondary {
+    color: var(--secondary-text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+#home {
+    width: 100%;
+}
+
+.container {
+    padding: 20px 15%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img.logo {
+    height: 35px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--secondary-text-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.home-container {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-container img {
+    width: 50%;
+    border: var(--secondary-text-color) 2px;
+    border-radius: 50%;
+    /* border-style: solid dashed dashed; */
+    box-shadow: inset 0 0 10px var(--secondary-text-color); 
+}
+
+.home-text h1 {
+    font-size: 70px;
+}
+
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 12px;
+    border: var(--secondary-text-color) 2px solid;
+    border-radius: 50%;
+}
+
+.social-icons ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    color: var(--primary-text-color);
+}
+
+ul li a.github:hover {
+    color: #4078c0;
+}
+
+ul li a.linkedin:hover {
+    color: #0e76a8;
+}
+
+ul li a.twitter:hover {
+    color: #1da1f2;
+}
