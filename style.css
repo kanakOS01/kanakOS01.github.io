@@ -186,26 +186,79 @@ nav ul li a:hover::after {
 }
 
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px; /* Adjust the gap as needed */
 }
 
-.project-list .project-card {
-    border-radius: 10px;
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: left; 
+    max-width: 500px; 
+    padding: 25px; 
+    border-radius: 10px; 
     background-color: var(--bg-2-color);
-    position: relative;
-    overflow: hidden;
+    margin: 10px;
+    transition: var(--transition);
 }
 
-.project-list .project-card img {
-    width: 90%;
+.project-card img {
     border-radius: 10px;
-    display: block;
-    align-items: center;
-    margin: 20px auto;
-
+    width: 100%; 
+    height: auto;
 }
+
+.project-title, .project-description, .project-tags, .project-url {
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+.project-title {
+    font-size: 150%; 
+    font-weight: 500; 
+}
+
+.project-description {
+    font-size: 95%; 
+    font-weight: 300; 
+}
+
+.project-tags {
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+.project-url i {
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: var(--transition);
+    box-shadow: 0 0 10px var(--secondary-text-color);
+}
+
+.project-url i:hover {
+    background-color: var(--secondary-text-color);
+    color: var(--bg-color);
+}
+
+.project-url {
+    display: flex;
+    justify-content: flex-start; /* Keeps the icon to the left */
+    align-items: center;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
 
 /* PROJECT END */
 
